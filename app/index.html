@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myApp" >
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
     <div ng-app="myApp">
         <!--<ng-include ng-cloak ng-controller="TodoCtrl" src="taskList/taskList.html"></ng-include>-->
         <h2>Todo</h2>
-        <div ng-controller="TodoCtrl as todoCtrl">
+        <div ng-cloak ng-controller="TodoCtrl as todoCtrl">
             <input type="text" placeholder="filter tasks" ng-model="taskName">
             <br>
 
